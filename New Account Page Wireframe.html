@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wireframe Account Page</title>
+    <style>
+        #layout{
+            display: grid;
+            grid-template-columns: [sidebar] auto [body] 3fr [links] 20%;
+            grid-template-rows: [header] auto [dreader] auto [body] auto [footer] 50px [real footer] auto;
+            grid-template-areas: 
+                "header  header  header"
+                "head2   head2   head2"
+                "body    body    body"
+                "footer  footer  footer";
+            }
+        #logo{
+            border-left: 1px solid;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            background-color: lightblue;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+        #heading{
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            background-color: lightblue;
+            align-content: center;
+            display: grid;
+            justify-content: center;
+        }
+        #headside{
+            border: 1px solid;
+            background-color: azure;
+        }
+        #side{
+            background-color: #ff02;
+            font-size: 1.25em;
+            border-left: 1px solid;
+            border-right: 1px dashed;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        #body{
+            border-right: 1px dashed;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5%;
+        }
+        #headside span{
+            display: block;
+            text-align: center;
+        }
+        #bodyside{
+            border-right: 1px solid;
+            padding-left: 10px;
+        }
+        #fleft{
+            border-bottom: 1px solid;
+            border-left: 1px solid;
+            border-top: 1px solid;
+        }
+        #foot{
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+        #fright{
+            border-bottom: 1px solid;
+            border-right: 1px solid;
+            border-top: 1px solid;
+        }
+        #realhead1{
+            border-left: 1px solid;
+            border-right: 1px dashed;
+            text-align: center;
+            background-color: #ff02;
+            padding-top: 10%;
+            font-size: 1.25em;
+        }
+        #realhead2{
+            border-right: 1px dashed;
+            text-align: center;
+        }
+        #realhead3{
+            border-right: 1px solid;
+            align-items: center;
+            font-size: 1.25em;
+            display: grid;
+            text-align: center;
+        }
+        #realhead2 a{
+            background-color: lightgray;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+            margin: 10px;
+            border: 1px solid;
+            display:inline-block;
+            border-radius: 10px
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .account{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto auto auto auto auto auto;
+            text-align: ;
+        }
+        #log img{
+            height: 20px;
+            width: auto;
+        }
+        input{
+            width: auto;
+            text-align: center;
+        }
+        #button{
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid;
+            border-radius: 10px;
+            padding-left:10px;
+            padding-right: 10px;
+            margin-top: 10px;
+            font-family: sans-serif;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="layout">
+            <div id="logo">
+            [ LOGO ]
+            </div>
+            <div id="heading">[ Website Name ]</div>
+            <div id="headside">
+                <span>Log in | Sign up</span><span>Your Account</span><span><a href="wireframe%202.html">Your cart</a></span><span>Search</span><span><input type="text"></span>
+            </div>
+            <div id="realhead1">
+                [ Sidebar ]
+            </div>
+            <div id="realhead2">
+                <a href="home.pdf">Home</a>
+                <a href="menswomenspage.pdf">Store</a>
+                  <a href="signup-aboutpages.pdf">Contact</a>
+            </div>
+            <div id="realhead3">            [ Navigation ]
+            </div>
+            <div id="side">
+                <li>[ Link 1 ]</li>
+                <li>[ Link 2 ]</li>
+                <li>[ Link 3 ]</li>
+            </div>
+            <div id="body">
+                <h1 style="text-align: center">New Account!</h1>
+                <div class="account">
+                    <div id="sign">
+                        <a href="null">Sign In</a></div>
+                    <div id="log">
+                        <img>[LOGO]</div>
+                    <div id="name">
+                        <label>Name</label>
+                    </div>
+                    <div id="mail">
+                        <label>E-mail address</label>
+                    </div>
+                    <div><input type="text">
+                        </div>
+                    <div><input type="text">
+                    </div>
+                    <div id="user"><label>Username</label></div>
+                    <div id="pass"><label>Password</label></div>
+                    <div><input type="text"></div>
+                    <div>
+                        <input type="text"></div>
+                </div>
+                <div id="button">
+                    <p>Create your account!</p>
+                </div>
+            </div>
+            <div id="bodyside">
+                <li>[ Link 4 ]</li>
+                <li>[ Link 5 ]</li>
+                <li>[ Link 6 ]</li>
+                <li>[ Link 7 ]</li>
+            </div>
+            <div id="fleft">
+                <p>[ Footer Placeholder text ]</p>
+            </div>
+            <div id="foot">
+                <p>[ Footer Placeholder text ]</p>
+            </div>
+            <div id="fright">
+                <p>[ LOGO ]</p>
+            </div>
+        </div>    
+    </body>
+</html>
