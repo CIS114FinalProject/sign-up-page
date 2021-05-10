@@ -19,32 +19,31 @@
             </nav>
             <div class="body">
                 <h2>New Account!</h2>
-                <div class="account">
-                    <div id="sign">
-                        <p>Sign In</p></div>
-                    <div id="log">
-                        </div>
-                    <div id="name">
-                        <label>Name</label>
-                    </div>
-                    <div id="mail">
+                <div id="account">
+                    <form method="GET" action="https://roan-equinox-chauffeur.glitch.me/form_process" id="newaccount">
+                    <table>
+                    <tr>
+                        <th>Sign In</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label>Name</label><br>
+                        <input type="text" name="Name" form="newaccount">
+                        </td>
+                        <td>
                         <label>E-mail address</label>
-                    </div>
-                    <div><input type="text">
-                        </div>
-                    <div><input type="text">
-                    </div>
-                    <div id="user"><label>Username</label></div>
-                    <div id="pass"><label>Password</label></div>
-                    <div><input type="text"></div>
-                    <div>
-                        <input type="text"></div>
-                </div>
-                <div id="button">
-                    <a href="#">Create your account!</a>
+                    <br><input type="email" name="Email" form="newaccount">
+                        </td>
+                    </tr>
+                        <td><label>Username</label><br><input type="text" name="Username" form="newaccount"></td>
+                    <td><label>Password</label><br><input type="password" name="Password" form="newaccount"></td>
+                    <input type="submit">
+                </table>
+                </form>
                 </div>
             </div>
-            <footer>
+        <footer>
             <nav id="footernav">
                 <ul>
                     <li class="footerli"><a href="#">Home</a></li>
